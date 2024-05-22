@@ -1,0 +1,50 @@
+#table-container {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 80px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 25, 1) 100%
+    );
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+  }
+  
+  table {
+    width: 100%;
+    font-size: 12px; /* Adjust the font size for smaller text */
+  }
+  
+  th,
+  td {
+    padding: 5px;/*Adjust the padding for a more compact layout */
+  }
+  
+  th {
+    border-radius: 5%;
+    text-align: center;
+    background-color: #878787;
+    color: black;
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+  }
+  
+  td {
+    border-radius: 5%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+    background-color: #ffffffd2;
+  }
+  
+  th:hover {
+    background: #00ff00c2;
+  }
+  
+  td:hover {
+    background: #ffffffc2;
+  }
+  
+  .rankings-header {
+    font-size: 16px; /* Adjust the font size for the header */
+    color: #00ff00;
+  }

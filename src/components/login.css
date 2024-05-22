@@ -1,0 +1,189 @@
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Globe container */
+.globe-container {
+  width: 40%; /* Adjust the width as needed */
+  margin-right: 5%; /* Add some space between the globe and form */
+  margin-left: 8%;
+  margin-top: 2.5%;
+  background: transparent;
+  border-radius: 5%;
+}
+
+/* Container for the form */
+.form-container {
+  width: 30%; /* Adjust the width as needed */
+  background-color: rgba(
+    0,
+    10,
+    39,
+    0.685
+  ); /* White background for better contrast */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners for a modern look */
+  box-shadow: 0 0 10px rgb(0, 10, 39); /* Adding a subtle shadow effect */
+  border-width: 5px;
+}
+
+/* Form header */
+.form-header {
+  margin-bottom: 20px; /* Adjust margin for spacing */
+}
+
+/* Heading style */
+.form-header h2 {
+  margin: 0;
+  color: #ffffff; /* Darkening the text color for better contrast */
+  font-size: 24px; /* Increase font size for emphasis */
+}
+
+/* Form group style */
+.form-group {
+  margin-bottom: 20px; /* Increase margin for spacing between groups */
+}
+
+/* Label style */
+.form-group label {
+  display: block;
+  font-size: larger;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255); /* Slightly lighter color for labels */
+}
+
+/* Input style */
+.form-group input {
+  width: 100%; /* Occupy full width */
+  padding: 10px;
+  border: 5px solid rgb(0, 10, 39);
+  border-radius: 10px;
+  font-size: 16px; /* Maintain font size for consistency */
+}
+.form-footer {
+  color: black;
+}
+
+/* Submit button style */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-image: linear-gradient(
+    -60deg,
+    rgb(0, 10, 39) 80%,
+    rgba(255, 255, 255, 0.644) 20%
+  );
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Maintain font size for consistency */
+}
+
+/* Toggle button style */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-size: 16px; /* Maintain font size for consistency */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .login-signup-container {
+    flex-direction: column; /* Change flex direction to stack items vertically */
+    height: auto; /* Remove fixed height */
+    padding: 0 20px; /* Add padding to container */
+  }
+
+  .globe-container {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin-left: -15%; /* Center the globe horizontally */
+    background: transparent;
+  }
+
+  .form-container {
+    width: 90%; /* Adjust the width for smaller screens */
+    margin-bottom: 20px; /* Add margin between globe and form */
+    margin-left: 18%;
+    margin-right: 10%;
+  }
+  .welcome-container {
+    margin-left: 20%;
+  }
+}
+
+/* Align input containers */
+.form-group input[type='text'],
+.form-group input[type='email'],
+.form-group input[type='password'] {
+  box-sizing: border-box; /* Include padding and border in the width */
+  width: 100%;
+  padding: 10px;
+  margin: 0; /* Reset margin */
+}
+/* Welcome container */
+.welcome-container {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 400px; /* Limit maximum width for better readability */
+  background-color: rgba(0, 10, 39, 0.685); /* Light gray background */
+  padding: 30px; /* Add more padding for a spacious feel */
+  border-radius: 15px; /* Slightly rounder corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  color: #ffffff;
+  font-size: xx-large;
+  text-align: center; /* Center text horizontally */
+}
+
+/* Welcome message *
+
+/* Go to Home button */
+.welcome-container button {
+  padding: 12px 24px; /* Slightly larger padding */
+  background-image: linear-gradient(
+    -60deg,
+    rgb(0, 10, 39) 80%,
+    rgba(255, 255, 255, 0.644) 20%
+  );
+  color: #ffffff;
+  border: none;
+  border-radius: 25px; /* Rounder button shape */
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.welcome-container button:hover {
+  color: rgb(0, 0, 0); /* Darker shade of green on hover */
+  background-image: linear-gradient(
+    -60deg,
+    rgba(255, 255, 255, 0) 80%,
+    rgb(0, 10, 39) 20%
+  );
+}
+
+.bar-chart-container {
+  width: auto;
+  max-width: 100%; /* Adjust as needed */
+  margin: 10% auto; /* Center the chart horizontally */
+  border-radius: 5px;
+  padding: auto;
+  background: rgba(0, 10, 39, 0.685);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+.treemap-container {
+  width: auto;
+  z-index: -1;
+  max-width: 100%; /* Adjust as needed */
+  margin: 3%;
+  padding: 2%;
+  border-radius: 5px;
+  background: rgba(0, 10, 39, 0.685);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}

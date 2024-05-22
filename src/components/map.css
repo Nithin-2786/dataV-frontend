@@ -1,0 +1,27 @@
+.map-container {
+  position: relative;
+}
+
+.radial-graph-container {
+  position: absolute;
+  bottom: 0px; /* Adjust the distance from the bottom */
+  left: 50%; /* Position horizontally at the center */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: space-between; /* Add space between the charts */
+  align-items: center;
+  width: 90%; /* Adjust the width as needed */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background-color: rgb(1, 1, 1);
+}
+
+.apex-chart-container {
+  width: 190px; /* Adjust the width as needed */
+  height: 190px; /* Adjust the height as needed */
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+}
