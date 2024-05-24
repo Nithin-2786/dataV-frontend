@@ -10,6 +10,7 @@ import LoginSignup from './components/signup';
 import MapWithMarkers from './components/testmap';
 import Upload from "./components/uploadedfiles";
 import HeatMap from './components/heatmap';
+import Marquee from './components/Marquee'; // Import the Marquee component
 
 const Popup = ({ city, onClose }) => (
   <div className="popup">
@@ -35,6 +36,7 @@ export default function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [isLogin, setLogin] = useState(false);
   const [accessToken, setAccessToken] = useState('');
+  const [uploadKey, setUploadKey] = useState(0); // Add this state for forcing re-render of Upload component
 
   const processData = (data) => {
     if (!Array.isArray(data)) {
@@ -143,6 +145,7 @@ export default function App() {
             setShowAlert(true);
             setTimeout(() => setShowAlert(false), 2000);
           }, 3000);
+          setUploadKey(prevKey => prevKey + 1); // Force re-render of Upload component
         } catch (parseError) {
           console.error('Error parsing JSON:', parseError);
           setAlertMessage('Error parsing JSON.');
@@ -211,6 +214,7 @@ export default function App() {
           <span>{alertMessage}</span>
         </div>
       )}
+      <Marquee cities={cityAverages} /> {/* Add the Marquee component here */}
       <Routes>
         <Route path="/" element={<Map key={reloadMap} data={region} />} />
         <Route path="/about" element={<AboutUs />} />
@@ -249,7 +253,7 @@ export default function App() {
           onClose={() => setShowPopup(false)}
         />
       )}
-      <Upload accessToken={accessToken} processData={processData} />
+      <Upload key={uploadKey} accessToken={accessToken} processData={processData} /> {/* Add key prop to force re-render */}
     </div>
   );
 }

@@ -50,7 +50,7 @@ for city, boundaries in city_centers.items():
         })
 
 # Save the dataset to a JSON file
-with open('dataset1.json', 'w') as file:
+with open('dataset7.json', 'w') as file:
     json.dump(dataset, file, indent=4)
 
 print("Dataset saved to 'dataset1.json'")

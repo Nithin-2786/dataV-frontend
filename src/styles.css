@@ -104,7 +104,7 @@ body {
   max-height: 110%;
   border-radius: 5%;
   background: transparent;
-  /*box-shadow: 0 0 20px rgb(255, 255, 255);*/
+  box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
 #pie-chart {
@@ -175,6 +175,8 @@ body {
   background: transparent;
   padding: 10px 20px;
   margin-bottom: 3%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(255, 255, 255);
 }
 
 .navbar-logo img {
@@ -199,14 +201,13 @@ body {
 }
 
 .nav-link {
-  color: rgb(0, 10, 39);
-
+  color: white;
+  text-decoration: none;
   font-size: larger;
-  text-decoration: underline;
   padding: 8px 15px;
   border: 2px solid transparent;
   border-radius: 5px;
-  background-color: transparent;
+  background-color: rgb(0, 10, 39);
   transition: all 0.3s ease;
 }
 
@@ -239,8 +240,8 @@ body {
 
 .file-input-wrapper {
   position: absolute;
-  top: 17.9%;
-  left: 10px;
+  top: 35%;
+  left: 45%;
   z-index: 1001;
   cursor: pointer;
   border: 5px solid #ccc;
@@ -321,7 +322,7 @@ body {
 
 .sidebar-toggle {
   position: absolute;
-  top: 17.9%; /* Adjust top positioning */
+  top: 35%; /* Adjust top positioning */
   right: 10px;
   z-index: 1001; /* Ensure it's above the sidebar */
   cursor: pointer;
@@ -766,6 +767,3 @@ tr {
   color: #fff;
   margin-top: 10px;
 }
-
-
-

@@ -115,6 +115,9 @@ function LoginSignup({ onLogin }) {
   return (
     <div>
       <Navbar />
+      <div className="headline-container">
+        <h1 className="headline-text">HYAIR </h1>
+      </div>
       {popupMessage && <div style={styles.popup}>{popupMessage}</div>}
       <div className="login-signup-container">
         <div className="globe-container">
@@ -202,7 +205,7 @@ function LoginSignup({ onLogin }) {
           </div>
         ) : (
           <div className="welcome-container">
-            <p>Hello, {username}!</p>
+            <p>Hello {username}!</p>
             <button onClick={() => navigate('/')}>Go to Home</button>
             <button onClick={handleLogout}>Logout</button>
           </div>

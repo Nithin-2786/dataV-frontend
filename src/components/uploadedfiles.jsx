@@ -106,7 +106,7 @@ export default function Upload({ accessToken, processData }) {
       {popupMessage && <div style={styles.popup}>{popupMessage}</div>}
       <header style={styles.header}>Uploaded Files</header>
       <div style={styles.container}>
-        <p>You can view your files if you have an account</p>
+        {sessionStorage.getItem("accessToken") ? null :<p>You can view your files if you have an account</p>}
         {files.map((file, index) => (
           <div key={index} style={styles.fileItem}>
             <span style={styles.fileName}>{file.filename}</span>
