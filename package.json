@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -72,6 +72,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "cobe": "^0.6.3",
-    "react-spring": "^9.7.3"
+    "react-spring": "^9.7.3",
+    "typescript": "^4.x.x"
   }
 }
